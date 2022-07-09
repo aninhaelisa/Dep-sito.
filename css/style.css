@@ -1,0 +1,352 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 150px;
+}
+
+.caixa{
+    position: static;
+    width: 940px;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 0px;
+}
+nav a{
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #0084ff;
+    text-decoration: underline;
+}
+
+.imgLogo{
+    margin-top: 15px;
+    height: 90px;
+    width: 90px;
+    transition: 1s;
+}
+
+.imgLogo:hover{
+    filter: invert(.5);
+}
+
+/*Headder pra mobile */
+@media screen and (max-width: 480px) {
+	.caixa {
+		width: auto;
+        height: auto;
+	}
+
+    header{
+        width: auto;
+    }
+    .imgLogo{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+        display: inline;
+        text-align: center;
+	}
+
+    nav a{
+        margin: 5px;
+        margin-top: 10px;
+        font-size: 15px;
+        margin: 0 0 0 0px;
+    }
+
+}
+
+/*Css MAIN*/
+
+.titulo-principal{
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #585858;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.principal:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.principal p {
+    margin: 0  10px 5px;
+    font-size: 20px;
+}
+
+.principal p a{
+    color: #000000;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.link:hover{
+    color: #0084ff;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-size: italic;
+}
+
+.ferramentas{
+    width: 150px;
+    float:left;
+    margin: 0 20px 20px;
+    filter: grayscale(.75);
+    transition: 1s;
+}
+
+.ferramentas:hover{
+    filter: grayscale(.0);
+    width: 200px;
+}
+
+.mapa{
+    margin-top: 5px;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa-p{
+    color: aliceblue;
+    font-size: 25px;
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+/*MAIN pra mobile*/
+
+@media screen and (max-width: 480px) {
+	.principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+    
+}
+
+/*Css do produtos*/
+
+.produtos li{
+
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 15px  15px 1.5%;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    color: aliceblue;
+    
+}
+
+.produtos li:hover{
+    border-color:#00ffff;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+.produtos li:active{
+    border-color:#3bb0ff;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-preco{
+    font-size: 22px;
+    font-family:bold;
+    margin-top: 10px;
+}
+.produto-descricao{
+    font-size: 18px;
+    
+}
+
+/*Produtos pra mobile*/
+
+@media screen and (max-width: 480px) {
+
+    .produtos {
+        width: auto;
+    }
+
+    .produtos li {
+        display: block;
+        width: auto;
+	}
+
+}
+
+/*CSS do contato*/
+
+.caixa-contato{
+    margin-left: 15px;
+}
+
+form{
+    margin: 40px 0;
+
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 5px 15px 10px;
+    color: white;
+}
+
+.input-padrao{
+    display: block;
+    margin: 20px;
+    padding: 10px 25px;
+    width: 50%;
+    color: white;
+   
+}
+
+.checkbox{
+    margin: 20px 0;
+    color: white;
+    margin: 5px 15px 10px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: #3bb0ff;
+    color: #ffffff;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin: 5px 15px 10px;
+}
+
+.enviar:hover{
+    background: #0b0577;
+    border-radius: 25px;
+
+}
+
+table{
+    margin: 5px 15px 10px;
+}
+
+thead{
+    background:#3bb0ff;
+    font-weight: bold;
+    color: white;
+    margin: 5px 15px 10px;
+}
+
+td, th{
+    border: 1px solid #0b0577;
+    padding: 15px 18px;
+    color: white;
+    margin: 5px 15px 10px;
+}
+
+/*contato pra mobile*/
+
+@media screen and (max-width: 480px) {
+
+    .enviar{
+        width: 35%;
+        padding: 15px 0;
+        background: #3bb0ff;
+        color: #ffffff;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 15px;
+        border: none;
+        transition: 1s all;
+        cursor: pointer;
+        margin-bottom: 5px;
+        margin: 5px 15px 10px;
+    }
+
+    form label, form legend {
+        display: block;
+        font-size: 15px;
+        margin: 5px 15px 10px;
+        color: white;
+    }
+}
+
+/*footer*/
+ 
+footer{
+    height: 250px;
+    width: 100vw;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+.copyright{
+    color:#000000;
+    font-size:13px;
+    margin: 20px 0;
+}
+footer p a{
+    color: #ffffff;
+    font-size: 15px;
+    color:#00595c;
+}
